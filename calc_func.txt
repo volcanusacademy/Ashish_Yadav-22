@@ -1,0 +1,57 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+void add(){
+        int num1,num2;
+        printf("Enter your two number: ");
+        scanf("%d %d",&num1,&num2);
+        printf("%d+%d=%d", num1,num2,num1+num2);
+}
+void sub(){
+        int num1,num2;
+        printf("Enter your two number: ");
+        scanf("%d %d",&num1,&num2);
+        printf("%d-%d=%d", num1,num2,num1-num2);
+}
+void mul(){
+        int num1,num2;
+        printf("Enter your two number: ");
+        scanf("%d %d",&num1,&num2);
+        printf("%d*%d=%d", num1,num2,num1*num2);
+}
+void dvd(){
+        int num1,num2;
+        printf("Enter your two number: ");
+        scanf("%d %d",&num1,&num2);
+        printf("%d/%d=%d", num1,num2,num1/num2);
+}
+
+int main() {
+    int i;
+    
+    do{
+    
+    printf("Enter which You want to calculate: \n");
+    printf("Press \n1 --> add\n2 --> sub\n3 --> mul\n4 --> dvd\n");
+    
+    scanf("%d",&i);
+
+    switch(i){
+        case 1:add();
+        break;
+        case 2:sub();
+        break;
+        case 3:mul();
+        break;
+        case 4:dvd();
+        break;
+        default:printf("Invalid Option");
+    }
+    }
+    while(i!=0);
+    
+    
+    
+    
+    return 0;
+}
