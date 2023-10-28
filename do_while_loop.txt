@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+// do while loop
+
+int main() {
+    int pwd=123456, inputpwd;
+    do{
+        printf("Please Enter your password: ");
+        scanf("%d", &inputpwd);
+    }
+    while(inputpwd!=pwd);
+    
+    
+    
+    return 0;
+}
