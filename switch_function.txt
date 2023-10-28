@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+// switch function
+
+int main() {
+    int op;
+    printf("\nEnter your language:");
+    printf("\nPress 1 for Hindi");
+    printf("\nPress 2 for English");
+    printf("\nPress 3 for Gujrati");
+    printf("\nPress 4 for Marathi");
+    printf("\nPress 5 for Telgu\n\n");
+    printf("Press Here: --> ");
+    scanf("%d", &op);
+    
+    switch(op){
+        case 1:printf("Your preffered language has been changed to hindi");
+        break;
+        case 2:printf("Your preffered language has been changed to English");
+        break;
+        case 3:printf("Your preffered language has been changed to Gujrati");
+        break;
+        case 4:printf("Your preffered language has been changed to Marathi");
+        break;
+        case 5:printf("Your preffered language has been changed to Telgu");
+        break;
+        default:printf("invalid option");
+    }
+    
+    
+    
+    return 0;
+}
