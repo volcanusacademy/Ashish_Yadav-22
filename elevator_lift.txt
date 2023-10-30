@@ -1,0 +1,41 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include<stdlib.h>
+
+static int cf=0;
+int nf;
+
+void up(int nf){
+    for(cf;cf<=nf;cf++){
+        sleep(1);
+    printf("\nyou are now int %d", cf);
+    }
+    cf=nf;
+}
+
+void down(int nf){
+    for(cf;cf>=nf;cf--){
+        sleep(1);
+    printf("\nyou are now in %d floor", cf);
+    }
+    cf=nf;
+}
+
+void menu(){
+    do{
+    printf("\nEnter floor Number: ");
+    scanf("%d", &nf);
+    if(cf<nf){
+        up(nf);
+    }
+    else{
+        down(nf);
+    }
+    }
+    while(nf!=-1);
+
+}
+
+void main(){
+    menu();
+}
