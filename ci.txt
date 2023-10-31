@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<math.h>
+
+float p,r,t;
+
+compound(float p,float r,float t){
+    float amount = p*((pow((1 + r / 100),t))); 
+    float CI = amount - p;
+    return CI;
+}
+
+void main(){
+    printf("Enter your principal amount: ");
+    scanf("%f", &p);
+
+    printf("Enter your rate amount: ");
+    scanf("%f", &r);
+
+    printf("Enter your time amount: ");
+    scanf("%f", &t);
+    
+    float c = compound(p,r,t);
+    printf("Compound Interest is : %lf",c);
+     
+}
