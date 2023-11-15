@@ -27,6 +27,5 @@ int main()
     printf("Enter any number:");
     scanf("%d",&n);
     palindrome(n);
-
     return 0;
 }
