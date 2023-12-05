@@ -1,0 +1,19 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int cubiod(int l,int b, int h){
+        return l*b*h;
+    }
+int main() {
+    int l,b,h;
+    printf("Enter length:");
+    scanf("%d",&l);
+    printf("Enter breadth:");
+    scanf("%d",&b);
+    printf("Enter height:");
+    scanf("%d",&h);
+    int volume = cubiod(l,b,h);
+    printf("%d",volume);
+
+    return 0;
+}
