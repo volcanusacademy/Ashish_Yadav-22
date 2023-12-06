@@ -1,0 +1,21 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    char name[20];
+    int roll_number;
+    float marks;
+    
+    printf("Enter your name:");
+    scanf("%s",&name);
+    printf("Enter your roll_number:");
+    scanf("%d",&roll_number);
+    printf("Enter your marks:");
+    scanf("%f",&marks);
+    
+    printf("Name is %s\n",name);
+    printf("roll_number is %d\n",roll_number);
+    printf("marks is %.2f\n",marks);
+    
+    return 0;
+}

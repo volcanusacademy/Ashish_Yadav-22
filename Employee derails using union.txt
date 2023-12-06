@@ -1,0 +1,38 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+struct emp_basic_details
+{
+    int dept_no;
+    char name[30];
+    char sex;
+    float salary;
+};
+
+union employee_information {
+    struct emp_basic_details employee;
+};
+
+typedef union employee_information emp;
+
+int main() {
+    emp employee_details;
+
+    printf("Enter the details of employee:\n");
+    printf("Employee Department ID:\t");
+    scanf("%d", &employee_details.employee.dept_no);
+    printf("Employee Name:\t");
+    scanf(" %s", employee_details.employee.name);
+    printf("Employee Salary:\t");
+    scanf("%f", &employee_details.employee.salary);
+    printf("Employee Sex:\t");
+    scanf(" %c", &employee_details.employee.sex);
+
+    printf("*********************************\n");
+    printf("Entered employee details are:\n");
+    printf("Department ID:\t%d\n", employee_details.employee.dept_no);
+    printf("Employee Name:\t%s\n", employee_details.employee.name);
+    printf("Employee Salary:\t%.2f\n", employee_details.employee.salary);
+    printf("Employee Sex:\t%c\n", employee_details.employee.sex);
+
+    return 0;
+}
