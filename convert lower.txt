@@ -1,0 +1,13 @@
+#include <stdio.h>  
+int main ()  
+{  
+    char upr;
+    int ascii;  
+      
+    // convert in lower case  
+    printf (" Enter the Upper Case Character: ");  
+    scanf (" %c", &upr);  
+    ascii = upr + 32;  
+    printf (" %c character in Lower case is: %c", upr, ascii);  
+    return 0;  
+}  

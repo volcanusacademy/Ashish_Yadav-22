@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <ctype.h>
+void upperCase(char ch){
+    if(isupper(ch)){
+        printf("Character is uppercase");
+    }
+    else{
+        printf("Character is not uppercase");
+    }
+}
+int main() {
+    char ch;
+    printf("Enter character:");
+    scanf("%c",&ch);
+    upperCase(ch);
+    return 0;
+}

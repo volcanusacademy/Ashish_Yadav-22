@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <ctype.h>
+
+void lowerCase(char ch){
+    if(islower(ch)){
+        printf("Character is lowercase");
+    }
+    else{
+        printf("Character is not lowercase");
+    }
+}
+int main() {
+    char ch;
+    printf("Enter character:");
+    scanf("%c",&ch);
+    lowerCase(ch);
+    return 0;
+}

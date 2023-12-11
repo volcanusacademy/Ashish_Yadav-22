@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main() {
+    for(int i=91;i<=96;i++){
+        printf("%c",i);
+    }
+    return 0;
+}
