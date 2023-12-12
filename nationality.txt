@@ -1,0 +1,25 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int main() {
+    char ch[10];
+    char i[2]="iI";
+    int age;
+    printf("Enter you Nationality example:i and I for india\n");
+    scanf("%c",&ch[0]);
+    
+    
+    if(ch[0]==i[0] || ch[0]==i[1]){
+        printf("Enter your age:");
+        scanf("%d",&age);
+        if(age>=18){
+            printf("You are eligible to vote\n");
+        }
+        else{
+            printf("You are not eligible to vote eligible creteria is 18+\n");
+        }
+    }
+    else{
+        printf("Your are not indian this is only for indian user\n");
+    }
+    return 0;
+}

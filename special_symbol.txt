@@ -1,0 +1,24 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int spEcial_chAracter(char ch){
+    int c=0;
+    char special_char[20]="!@#$%^&*()_+";
+    for(int i=0;i<=10;i++){
+        if(ch==special_char[i]){
+            c++;
+        }
+    }
+    if(c>0){
+        printf("%c is Special Character",ch);
+    }
+    else{
+        printf("%c is Not Special Character",ch);
+    }
+}
+int main() {
+    char ch;
+    printf("Enter character:");
+    scanf("%c",&ch);
+    spEcial_chAracter(ch);
+    return 0;
+}

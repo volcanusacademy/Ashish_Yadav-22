@@ -1,0 +1,57 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+float sum=0;
+
+int maRks(){
+    float marks[5];
+    for(int i=0;i<5;i++){
+        if(i==0){
+            printf("Enter Hindi marks:");
+        }
+        if(i==1){
+            printf("Enter English marks:");   
+        }
+        if(i==2){
+            printf("Enter Maths marks:");   
+        }
+        if(i==3){
+            printf("Enter Science marks:");   
+        }
+        if(i==4){
+            printf("Enter Physics marks:");   
+        }
+        scanf("%f",&marks[i]);
+        sum = sum+marks[i];
+    }
+    return sum;
+}
+
+float Per(){
+    sum = sum/5;
+    return sum;
+}
+
+void print_Result(){
+    printf("Your percent is %.2f\n",sum);
+    if(sum>=75 && sum<=100){
+        printf("Grade A");
+    }
+    else if(sum>=60 &&sum<75){
+        printf("Grade B");
+    }
+    else if(sum>=50 && sum<60){
+        printf("Grade C");
+    }
+    else if(sum>=75 && sum<=100){
+        printf("Grade D");
+    }
+    else{
+        printf("Failed!");
+    }
+}
+int main() {
+    maRks();
+    Per();
+    print_Result();
+    return 0;
+}
