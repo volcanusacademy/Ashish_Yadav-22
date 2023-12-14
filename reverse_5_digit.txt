@@ -1,0 +1,38 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int num,temp,count=0;
+int arr[5],arrtemp[5];
+
+int CouNt(){
+    //count length of number function
+    int i=num;
+    while(i!=0){
+        i = i/10;
+        count++;
+    }
+    return count;
+}
+
+int ReVerSe(int num){
+    for(int i=0;i<=4;i++){
+        arr[i] = num%10;
+        num = num/10;
+    }
+    for(int i=0;i<=4;i++){
+        printf("%d",arr[i]);
+    }
+}
+
+int main() {
+    printf("Enter five digit number:");
+    scanf("%d",&num);
+    
+    if(CouNt()==5){
+        ReVerSe(num);
+    }
+    else{
+        printf("Please Enter only five digit number!\n");
+    }
+    return 0;
+}
