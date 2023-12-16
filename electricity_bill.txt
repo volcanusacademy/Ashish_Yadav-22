@@ -1,0 +1,45 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+float lm_unit;
+float cm_unit;
+float current_unit;
+float amount;
+
+int main() {
+    printf("Enter last month unit\n");
+    scanf("%f",&lm_unit);
+    printf("Enter current month unit\n");
+    scanf("%f",&cm_unit);
+    
+    if(lm_unit==cm_unit){
+        printf("your bill amount is 0\n");
+    }
+    else if(cm_unit>lm_unit){
+        current_unit = cm_unit-lm_unit;
+        printf("Your current unit is %.2f\n",current_unit);
+        if(current_unit>=0 && current_unit<=100){
+            amount = current_unit*2;
+            printf("your current bill amount is %.2frs\n",amount);
+        }
+        else if(current_unit>=101 && current_unit<=200){
+            amount = current_unit*3;
+            printf("your current bill amount is %.2frs\n",amount);
+        }
+        else if(current_unit>=201 && current_unit<=300){
+            amount = current_unit*4;
+            printf("your current bill amount is %.2frs\n",amount);
+        }
+        else if(current_unit>300){
+            amount = current_unit*5;
+            printf("your current bill amount is %.2frs\n",amount);
+        }
+        else{
+            printf("Invalid!\n");
+        }
+    }
+    else{
+        printf("Enter agin you entered wrong value!\n");
+    }
+
+    return 0;
+}

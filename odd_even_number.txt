@@ -1,0 +1,39 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int num,count=0,rem;
+int count_even=0;
+int count_odd=0;
+
+int Count(int num){
+    int i=num;
+    while(i!=0){
+        i = i/10;
+        count++;
+    }
+    return count;
+}
+
+int main() {
+    printf("Enter Five digit number\n");
+    scanf("%d",&num);
+    
+    if(Count(num)==5){
+        while(num!=0){
+           rem = num%10;
+           if(rem%2==0){
+               count_even++;
+           }
+           else{
+               count_odd++;
+           }
+           num = num/10;
+        }
+        printf("Total even no. is:%d\n",count_even);
+        printf("Total odd no. is:%d\n",count_odd);
+    }
+    else{
+        printf("Please enter only Five digit number\n");
+    }
+
+    return 0;
+}

@@ -1,0 +1,40 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int num,count=0,rem,sum=0;
+
+int Count(int num){
+    while(num!=0){
+        num = num/10;
+        count++;
+    }
+    return count;
+}
+
+int is_amstronng(){
+    if(Count(num)==3){
+        int i=num;
+        while(i!=0){
+            rem = i%10;
+            rem = rem*rem*rem;
+            sum = sum+rem;
+            i = i/10;
+        }
+        if(num == sum){
+            printf("Number is amstrong\n");
+        }
+        else{
+            printf("Number is not amstrong\n");
+        }
+    }
+    else{
+        printf("Please enter only three digit number\n");
+    }
+}
+int main() {
+    printf("Enter three digit number\n");
+    scanf("%d",&num);
+    
+    is_amstronng();
+    
+    return 0;
+}

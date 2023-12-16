@@ -1,0 +1,45 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int num,count=0,rem,greatest=0,smallest=1;
+
+int Count(int num){
+    int i=num;
+    while(i!=0){
+        i = i/10;
+        count++;
+    }
+    return count;
+}
+
+int main() {
+    printf("Enter Four digit number\n");
+    scanf("%d",&num);
+    
+    if(Count(num)==4){
+        int i=num;
+        while(i!=0){
+            rem = i%10;
+            if(rem>greatest){
+                greatest = rem;
+            }
+            i = i/10;
+        }
+        printf("Greatest of four digit number is:%d\n",greatest);
+
+        int j=num;
+        while(j!=0){
+            rem = j%10;
+            if(rem<greatest){
+                smallest = rem;
+                greatest = smallest;
+            }
+            j = j/10;
+        }
+        printf("smallest of four digit number is:%d\n",smallest);
+    }
+    else{
+        printf("Please enter only Four digit number\n");
+    }
+
+    return 0;
+}
