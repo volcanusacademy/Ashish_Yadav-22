@@ -1,0 +1,7 @@
+Date of journey: 22/12/2023
+
+Name of passenger is :ashish		 	 	 	  Age of passenger is : 22
+
+Source of  pasanger is: indore		 	 	  Destination of passenger is:bhopal
+
+Number of ticket is: 5		 	 	 	  Total fair of tickets is: 1250
